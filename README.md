@@ -6,10 +6,10 @@
 - **Instituição:** Universidade Federal de Roraima (UFRR)
 - **Integrantes:** 
   - Osean Pinto Cordeiro do Nascimento (2025015571)
-  - Integrante 2 (Matrícula)
+  - Erika Andreina Mejías Palma (2025015123)
 
 ## Ferramentas Utilizadas
-- **Logisim-Evolution** (Versão X)
+- **Logisim-Evolution** (Versão 5.0.0)
 
 ## Lista de Arquivos Entregues
 ...
