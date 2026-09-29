@@ -460,24 +460,6 @@
     <comp lib="0" loc="(130,220)" name="Pin">
       <a name="appearance" val="classic"/>
     </comp>
-    <comp lib="0" loc="(460,500)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </comp>
-    <comp lib="0" loc="(460,520)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="6"/>
-    </comp>
-    <comp lib="0" loc="(460,540)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </comp>
-    <comp lib="0" loc="(460,560)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </comp>
-    <comp lib="0" loc="(730,500)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="type" val="output"/>
-    </comp>
     <comp lib="2" loc="(420,290)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="selloc" val="tr"/>
@@ -494,7 +476,6 @@
     <comp lib="5" loc="(230,410)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp loc="(680,500)" name="main"/>
     <wire from="(130,100)" to="(210,100)"/>
     <wire from="(130,140)" to="(200,140)"/>
     <wire from="(130,220)" to="(180,220)"/>
@@ -538,6 +519,5 @@
     <wire from="(340,270)" to="(380,270)"/>
     <wire from="(340,300)" to="(340,420)"/>
     <wire from="(340,300)" to="(380,300)"/>
-    <wire from="(680,500)" to="(730,500)"/>
   </circuit>
 </project>
