@@ -134,7 +134,7 @@
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(690,630)" name="NOT Gate"/>
-    <comp lib="10" loc="(1620,500)" name="BCD_to_7_Segment_decoder"/>
+    <comp lib="10" loc="(1620,490)" name="BCD_to_7_Segment_decoder"/>
     <comp lib="5" loc="(1580,600)" name="Counter">
       <a name="appearance" val="classic"/>
       <a name="max" val="0xf"/>
@@ -152,7 +152,7 @@
       <a name="facing" val="east"/>
       <a name="offcolor" val="#d1d1d1"/>
     </comp>
-    <comp lib="6" loc="(1620,500)" name="7-Segment Display"/>
+    <comp lib="6" loc="(1620,490)" name="7-Segment Display"/>
     <comp lib="6" loc="(870,480)" name="LED">
       <a name="label" val="DESLOCAMENTO_LED"/>
       <a name="offcolor" val="#d1d1d1"/>
@@ -165,10 +165,10 @@
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="T0-T1-T2"/>
     </comp>
-    <comp lib="9" loc="(1060,861)" name="Text">
+    <comp lib="9" loc="(1060,860)" name="Text">
       <a name="text" val="É_PRIMO"/>
     </comp>
-    <comp lib="9" loc="(1205,749)" name="Text">
+    <comp lib="9" loc="(1205,745)" name="Text">
       <a name="text" val="BIT DE VALIDADE"/>
     </comp>
     <comp lib="9" loc="(1235,495)" name="Text">
@@ -185,15 +185,19 @@
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="CONSTANTE 1"/>
     </comp>
-    <comp lib="9" loc="(723,535)" name="Text">
+    <comp lib="9" loc="(495,498)" name="Text">
+      <a name="font" val="SansSerif bold 11"/>
+      <a name="text" val="A5-A4-A3-A2-A1-A0"/>
+    </comp>
+    <comp lib="9" loc="(720,535)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="TAG A5-A3"/>
     </comp>
-    <comp lib="9" loc="(732,512)" name="Text">
+    <comp lib="9" loc="(730,510)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="INDEX A2-A1"/>
     </comp>
-    <comp lib="9" loc="(754,492)" name="Text">
+    <comp lib="9" loc="(750,490)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="DESLOCAMENTO A0"/>
     </comp>
@@ -244,7 +248,7 @@
     <wire from="(1560,620)" to="(1560,630)"/>
     <wire from="(1570,620)" to="(1570,650)"/>
     <wire from="(1580,600)" to="(1630,600)"/>
-    <wire from="(1630,580)" to="(1630,600)"/>
+    <wire from="(1630,570)" to="(1630,600)"/>
     <wire from="(520,510)" to="(530,510)"/>
     <wire from="(530,510)" to="(530,520)"/>
     <wire from="(530,520)" to="(670,520)"/>
@@ -429,7 +433,7 @@
     <comp lib="5" loc="(400,460)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="9" loc="(442,592)" name="Text">
+    <comp lib="9" loc="(440,590)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="BIT DE VALIDAÇÃO DE 4 LINHAS"/>
     </comp>
