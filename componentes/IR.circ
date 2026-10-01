@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="IR"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings/>
+  <toolbar/>
+  <circuit name="IR">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="IR"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="clabel" val="IR"/>
+    <a name="clabelup" val="north"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="none" height="70" stroke="#000000" width="31" x="50" y="50"/>
+      <circ-anchor facing="east" x="50" y="50"/>
+      <circ-port dir="in" pin="350,400" x="50" y="60"/>
+      <circ-port dir="in" pin="350,440" x="50" y="100"/>
+      <circ-port dir="in" pin="430,420" x="50" y="80"/>
+      <circ-port dir="in" pin="430,480" x="50" y="110"/>
+      <circ-port dir="out" pin="730,580" x="80" y="110"/>
+      <circ-port dir="out" pin="790,350" x="80" y="60"/>
+      <circ-port dir="out" pin="790,400" x="80" y="70"/>
+      <circ-port dir="out" pin="790,450" x="80" y="80"/>
+      <circ-port dir="out" pin="790,540" x="80" y="90"/>
+      <circ-port dir="out" pin="900,500" x="80" y="100"/>
+    </appear>
+    <comp lib="0" loc="(350,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Entrada"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(350,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CLOCK"/>
+    </comp>
+    <comp lib="0" loc="(430,420)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="IRWrite"/>
+    </comp>
+    <comp lib="0" loc="(430,480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="0" loc="(580,400)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="bit0" val="2"/>
+      <a name="bit1" val="2"/>
+      <a name="bit3" val="2"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(690,440)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="bit0" val="1"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(730,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="IMM"/>
+      <a name="type" val="output"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(740,480)" name="Splitter">
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(790,350)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RS"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RT"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,450)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RD"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,540)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Funct"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(900,500)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="OpCode"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(870,500)" name="OR Gate"/>
+    <comp lib="1" loc="(900,500)" name="NOT Gate"/>
+    <comp lib="5" loc="(440,370)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(350,400)" to="(440,400)"/>
+    <wire from="(350,440)" to="(440,440)"/>
+    <wire from="(430,420)" to="(440,420)"/>
+    <wire from="(430,480)" to="(470,480)"/>
+    <wire from="(470,460)" to="(470,480)"/>
+    <wire from="(500,400)" to="(580,400)"/>
+    <wire from="(600,410)" to="(660,410)"/>
+    <wire from="(600,420)" to="(670,420)"/>
+    <wire from="(600,430)" to="(670,430)"/>
+    <wire from="(660,350)" to="(660,410)"/>
+    <wire from="(660,350)" to="(790,350)"/>
+    <wire from="(670,400)" to="(670,420)"/>
+    <wire from="(670,400)" to="(790,400)"/>
+    <wire from="(670,430)" to="(670,580)"/>
+    <wire from="(670,430)" to="(690,430)"/>
+    <wire from="(670,580)" to="(730,580)"/>
+    <wire from="(690,430)" to="(690,440)"/>
+    <wire from="(710,450)" to="(740,450)"/>
+    <wire from="(710,460)" to="(710,540)"/>
+    <wire from="(710,540)" to="(790,540)"/>
+    <wire from="(740,450)" to="(740,480)"/>
+    <wire from="(740,450)" to="(790,450)"/>
+    <wire from="(760,490)" to="(790,490)"/>
+    <wire from="(760,500)" to="(790,500)"/>
+    <wire from="(790,480)" to="(790,490)"/>
+    <wire from="(790,480)" to="(820,480)"/>
+    <wire from="(790,500)" to="(790,520)"/>
+    <wire from="(790,520)" to="(820,520)"/>
+  </circuit>
+</project>
